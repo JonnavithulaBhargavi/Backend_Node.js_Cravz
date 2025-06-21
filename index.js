@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use(bodyParser.json());
 app.use('/vendor', vendorRoutes);
-app.use('/firm', firmRoutes)
+app.use('/firm', firmRoutes);
 app.use('/product', productRoutes);
 app.use('/uploads', express.static('uploads'));
 
